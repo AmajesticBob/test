@@ -1,10 +1,3 @@
-/*
-hello this is just a test
-
-
-   
-*/
-
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
@@ -196,5 +189,5 @@ function hslToRgb(h, s, l){
     return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
 }
 
-//login with this shitty code
-client.login(config.token);
+//THIS MUST BE THIS WAY
+client.login(process.env.BOT.TOKEN);
